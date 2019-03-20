@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery Examples</title>
+        <style>
+            #draggable { 
+                width: 150px;
+                height: 150px;
+                padding: 0.5em; 
+                border: 1px solid black;
+                display: inline-block;
+            }
+        </style>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/themes/cupertino/jquery-ui.css" />
+
+        <script>
+        $( function() {
+            $( "#draggable" ).resizable();
+            $( "#draggable" ).draggable();
+        } );
+        </script>
+    </head>
+    <body>
+        <div id="draggable" class="ui-widget-content">
+            <h3>I can be dragged around and resized</h3>
+        </div>
+    </body>
+</html>
